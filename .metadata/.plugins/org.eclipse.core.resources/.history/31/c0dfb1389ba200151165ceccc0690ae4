@@ -83,7 +83,6 @@ public class Board extends JPanel implements ActionListener{
         private int currentSpeed = 3;
         private int[] screenData;
         private Timer timer;
-       
         
         public Board(){
         	loadImages();

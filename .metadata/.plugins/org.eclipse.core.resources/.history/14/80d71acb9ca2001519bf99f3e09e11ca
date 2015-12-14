@@ -1,5 +1,4 @@
 
-import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 import java.awt.EventQueue;
@@ -9,9 +8,6 @@ public class Game extends JFrame{
 	public Game() {
         
         initUI();
-        //set relative path yo your destination
-        ImageIcon img = new ImageIcon("C:/Users/JAT/Desktop/Git/PACMAN/Pacman/images/PacMan3left.gif");
-		setIconImage(img.getImage());
     }
     
     private void initUI() {
