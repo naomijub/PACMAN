@@ -77,23 +77,6 @@ public class Board extends JPanel implements ActionListener{
     		17, 32, 18, 18, 18, 18, 16, 20, 13, 17, 16, 16, 18, 32, 20,
     		25, 24, 24, 24, 24, 24, 24, 24, 26, 24, 24, 24, 24, 24, 28 };
 
-    private final int leveldata2[] = {
-    		19, 26, 26, 26, 26, 26, 26, 18, 26, 26, 26, 26, 26, 26, 22,
-    		21,  3, 10, 10, 10, 10, 14, 21, 11, 10, 10, 10, 10,  6, 21,
-    		21,  5, 19, 26, 26, 26, 26, 32, 26, 26, 26, 26, 22,  5, 21,
-    		21,  5, 21,  3, 10, 10, 14, 21, 11, 10, 10,  6, 21,  5, 21,
-    		21,  5, 21,  5, 35, 26, 26, 16, 26, 26, 38,  5, 21,  5, 21,
-    		21,  5, 21,  5, 21,  3, 14, 21, 11,  6, 21,  5, 21,  5, 21,
-    		21, 13, 21, 13, 21, 13, 19, 16, 22, 13, 21, 13, 21, 13, 21,
-    		17, 26, 32, 26, 16, 26, 16, 32, 16, 26, 16, 26, 32, 26, 20,
-    		21,  7, 21,  7, 21,  7, 25, 16, 28,  7, 21,  7, 21,  7, 21, 
-    		21,  5, 21,  5, 21,  9, 14, 21, 11, 12, 21,  5, 21,  5, 21, 
-    		21,  5, 21,  5, 40, 26, 26, 16, 26, 26, 44,  5, 21,  5, 21,
-    		21,  5, 21,  9, 10, 10, 14, 21, 11, 10, 10, 12, 21,  5, 21, 
-    		21,  5, 25, 26, 26, 26, 26, 32, 26, 26, 26, 26, 28,  5, 21,
-    		21,  9, 10, 10, 10, 10, 14, 21, 11, 10, 10, 10, 10, 12, 21,
-    		25, 26, 26, 26, 26, 26, 26, 24, 26, 26, 26, 26, 26, 26, 28 };
-    
         private final int validSpeeds[] = {1, 2, 3, 4, 6, 8};
         private final int maxSpeed = 6;
 
@@ -223,7 +206,7 @@ public class Board extends JPanel implements ActionListener{
                     currentSpeed++;
                 }
 
-                initLevel2();
+                initLevel();
             }
         }
         
@@ -513,15 +496,6 @@ public class Board extends JPanel implements ActionListener{
             int i;
             for (i = 0; i < nroBlocks * nroBlocks; i++) {
                 screenData[i] = leveldata[i];
-            }
-            continueLevel();
-        }
-        
-        private void initLevel2() {
-
-            int i;
-            for (i = 0; i < nroBlocks * nroBlocks; i++) {
-                screenData[i] = leveldata2[i];
             }
             continueLevel();
         }
